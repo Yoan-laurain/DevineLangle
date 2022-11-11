@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>leBonAngle</title>
+		<style type="text/css">
+			@import url(style.css);
+		</style>
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+	<body onload="init()" class="area" >
+
+		<div id="header">
+			<h1>Devine le bon angle !</h1>
+		</div>
+
+		<div id="Score">
+			<p id = "idScore">Score : <span id="score">0</span></p>
+			<p>Nombre d'angles : <span id="nbAngles">0</span></p>
+		</div>
+
+		<div id = "ContentCircle" >
+			<canvas id="myCanvas"  width="600" height="300" onmousemove="FillPartOfTheCircle(event)" onmouseleave="Reset()" onclick="Guessing()"></canvas>
+		</div>
+
+		<div id="AngleToFindContainer">
+			<p>Angle à trouver : <span id="AngleToGuess">0</span></p>
+		</div>
+
+		<div id="DifferenceContainer">
+			<p>Différence : <span id="Difference"></span></p>
+		</div>
+
+		<a href="#"  id = "NewGame" onclick="NewGame()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			Suivant
+		</a>
+
+		<div id="footer">
+			<p>Copyright Laurain Yoan 2022</p>
+		</div>
+
+
+
+
+	<script type="text/javascript" src="leBonAngle.js"></script>
+	</body>
+</html>
