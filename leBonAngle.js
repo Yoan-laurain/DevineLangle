@@ -2,7 +2,9 @@ var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d'); 
 var X = canvas.width / 2;
 var Y = canvas.height / 2 ;
-var R = 140;
+
+
+var R = 120;
 var angleToGuess = GenerateRandom();;
 var choosenAngle;
 var totalScore = 0;
