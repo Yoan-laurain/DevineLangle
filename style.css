@@ -2,7 +2,7 @@ body
 {
     overflow-y: hidden;  
     overflow-x: hidden;
-    background-image: url("images/background.png");
+    background-image: url("images/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
     width : 50vw;
